@@ -2,109 +2,99 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Livres | ProfChantal.ca</title>
-  <meta name="description" content="Ouvrages de la professeure Chantal Bouchard — qualité, évaluation, indicateurs et amélioration des services.">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livres | ProfChantal.ca</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="/index.html" class="brand" aria-label="Accueil Prof Chantal">
-        <img src="/assets/images/logo.png" alt="Logo Prof Chantal" class="site-logo" width="120" height="120">
-      </a>
+    <header>
+        <h1>Professeure Chantal Bouchard</h1>
+        <nav>
+            <a href="/index.html">Accueil</a>
+            <a href="/pages/apropos.html">À propos</a>
+            <a href="/pages/livres.html" class="active">Livres</a>
+            <a href="/pages/ressources.html">Ressources</a>
+            <a href="/pages/publications.html">Publications</a>
+            <a href="/pages/contact.html">Contact</a>
+        </nav>
+    </header>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
-        <span class="hamburger" aria-hidden="true"></span>
-      </button>
+    <main>
 
-      <nav id="main-nav" class="main-nav" aria-label="Menu principal">
-        <a class="nav-link" href="/index.html">Accueil</a>
-        <a class="nav-link" href="/pages/apropos.html">À propos</a>
-        <a class="nav-link active" href="/pages/livres.html">Livres</a>
-        <a class="nav-link" href="/pages/ressources.html">Ressources</a>
-        <a class="nav-link" href="/pages/publications.html">Publications</a>
-        <a class="nav-link" href="/pages/contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+        <section class="page-intro">
+            <h2>Mes ouvrages</h2>
+            <p>
+                Cette page présente les ouvrages publiés par Chantal Bouchard
+                ainsi que les ressources complémentaires associées.
+            </p>
+        </section>
 
-  <main>
+        <section class="books-grid">
 
-    <section class="page-intro container">
-      <h1>Mes ouvrages</h1>
-      <p class="lead">Ouvrages et ressources pour mieux mesurer, évaluer et améliorer la qualité des services.</p>
-    </section>
+            <article class="book-card">
+                <div class="book-cover-placeholder">
+                    <img src="/assets/images/livre-1.jpg" alt="Couverture : Construire des indicateurs utiles" loading="lazy">
+                </div>
+                <div class="book-content">
+                    <h3>Construire des indicateurs utiles</h3>
+                    <p class="book-tagline">Avant de calculer un indicateur, savoir quoi mesurer.</p>
+                    <p class="book-description">
+                        Un guide pratique pour concevoir des indicateurs pertinents,
+                        utiles à la décision et adaptés au contexte organisationnel.
+                    </p>
+                    <div class="book-actions">
+                      <a href="/pages/ressources.html#indicateurs" class="btn btn-primary">Voir les ressources</a>
+                      <a href="https://www.amazon.ca/-/fr/dp/2982528975/ref=sr_1_4?__mk_fr_CA=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1WVZBAYJJH14B&dib=eyJ2IjoiMSJ9.TIvgPU12WVbWk3CWKd_2zWXZNkD3CCJCYvfJ8l72HIfE195OV3U-onEQ4UTi2aexrHJUqOzfI1Aqz7CpQdE1dlgaoIpZHBLPqVwnJzIGWP8.HTNyedz2XXmN9Hv2MKOhnGAROOrQPUsKSBc-AVY9LIc&dib_tag=se&keywords=construire+des+indicateur+utiles&qid=1783307311&sprefix=construire+des+indicateurs+utiles%2Caps%2C75&sr=8-4" class="btn btn-outline" target="_blank" rel="noopener">Acheter</a>
+                    </div>
+                </div>
+            </article>
 
-    <section class="books-grid container" aria-labelledby="livres-title">
-      <h2 id="livres-title" class="sr-only">Liste des ouvrages</h2>
+            <article class="book-card">
+                <div class="book-cover-placeholder">
+                    <img src="/assets/images/livre-2.jpg" alt="Couverture : Les clients qui se taisent" loading="lazy">
+                </div>
+                <div class="book-content">
+                    <h3>Les clients qui se taisent</h3>
+                    <p class="book-tagline">Comprendre les plaintes, les silences et les départs invisibles.</p>
+                    <p class="book-description">
+                        Un ouvrage consacré à la compréhension du comportement des
+                        clients insatisfaits et aux mécanismes d'amélioration des services.
+                    </p>
+                    <div class="book-actions">
+                      <a href="/pages/ressources.html#clients" class="btn btn-primary">Voir les ressources</a>
+                      <a href="https://www.amazon.ca/dp/2982528967?ref=ppx_yo2ov_dt_b_fed_asin_title" class="btn btn-outline" target="_blank" rel="noopener">Acheter</a>
+                    </div>
+                </div>
+            </article>
 
-      <article id="construire" class="book-card">
-        <figure class="book-cover">
-          <img src="/assets/images/livre-1.jpg" alt="Couverture — Construire des indicateurs utiles" loading="lazy" width="420" height="630" srcset="/assets/images/livre-1.jpg 480w, /assets/images/livre-1@2x.jpg 900w" sizes="(max-width:600px) 100vw, 320px">
-        </figure>
-        <div class="book-content">
-          <h3>Construire des indicateurs utiles</h3>
-          <p class="book-tagline">Avant de calculer un indicateur, savoir quoi mesurer.</p>
-          <p class="book-description">Un guide pratique pour concevoir des indicateurs pertinents, utiles à la décision et adaptés au contexte organisationnel.</p>
-          <div class="book-actions">
-            <a class="btn btn-primary" href="/pages/livres.html#construire">Détails</a>
-            <!-- Remplacez le lien d'achat ci‑dessous par l'URL de la page d'achat (éditeur / Amazon) -->
-            <a class="btn btn-outline" href="https://example.com/acheter/construire" target="_blank" rel="noopener">Acheter</a>
-            <!-- Remplacez par un fichier PDF réel si disponible -->
-            <a class="btn btn-secondary" href="/assets/ressources/annexe-indicateurs.pdf" download>Télécharger annexe</a>
-          </div>
-        </div>
-      </article>
+            <article class="book-card">
+                <div class="book-cover-placeholder">
+                    <img src="/assets/images/livre-3.jpg" alt="Couverture : Amélioration continue des services" loading="lazy">
+                </div>
+                <div class="book-content">
+                    <h3>Amélioration continue des services</h3>
+                    <p class="book-tagline">Outils, méthodes et applications.</p>
+                    <p class="book-description">
+                        Une présentation des principaux outils et méthodes d'amélioration
+                        continue appliqués aux organisations de services.
+                    </p>
+                    <div class="book-actions">
+                      <a href="/pages/ressources.html#amelioration" class="btn btn-primary">Voir les ressources</a>
+                      <a href="#" class="btn btn-outline" target="_blank" rel="noopener">Acheter (à venir)</a>
+                    </div>
+                </div>
+            </article>
 
-      <article id="clients" class="book-card">
-        <figure class="book-cover">
-          <img src="/assets/images/livre-2.jpg" alt="Couverture — Les clients qui se taisent" loading="lazy" width="420" height="630" srcset="/assets/images/livre-2.jpg 480w, /assets/images/livre-2@2x.jpg 900w" sizes="(max-width:600px) 100vw, 320px">
-        </figure>
-        <div class="book-content">
-          <h3>Les clients qui se taisent</h3>
-          <p class="book-tagline">Comprendre les plaintes, les silences et les départs invisibles.</p>
-          <p class="book-description">Ouvrage consacré à la compréhension du comportement des clients insatisfaits et aux mécanismes d'amélioration des services.</p>
-          <div class="book-actions">
-            <a class="btn btn-primary" href="/pages/livres.html#clients">Détails</a>
-            <a class="btn btn-outline" href="https://example.com/acheter/clients" target="_blank" rel="noopener">Acheter</a>
-            <a class="btn btn-secondary" href="/assets/ressources/annexe-clients.pdf" download>Télécharger annexe</a>
-          </div>
-        </div>
-      </article>
+        </section>
 
-      <article id="amelioration" class="book-card">
-        <figure class="book-cover">
-          <img src="/assets/images/livre-3.jpg" alt="Couverture — Amélioration continue des services" loading="lazy" width="420" height="630" srcset="/assets/images/livre-3.jpg 480w, /assets/images/livre-3@2x.jpg 900w" sizes="(max-width:600px) 100vw, 320px">
-        </figure>
-        <div class="book-content">
-          <h3>Amélioration continue des services</h3>
-          <p class="book-tagline">Outils, méthodes et applications.</p>
-          <p class="book-description">Présentation des principaux outils et méthodes d'amélioration continue appliqués aux organisations de services.</p>
-          <div class="book-actions">
-            <a class="btn btn-primary" href="/pages/livres.html#amelioration">Détails</a>
-            <a class="btn btn-outline" href="https://example.com/acheter/amelioration" target="_blank" rel="noopener">Acheter</a>
-            <a class="btn btn-secondary" href="/assets/ressources/annexe-amelioration.pdf" download>Télécharger annexe</a>
-          </div>
-        </div>
-      </article>
+    </main>
 
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© Chantal Bouchard</p>
-    </div>
-  </footer>
-
-  <script src="/assets/js/main.js" defer></script>
+    <footer>
+        <p>© Chantal Bouchard</p>
+    </footer>
 
 </body>
 
