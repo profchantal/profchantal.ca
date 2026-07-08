@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livres | ProfChantal.ca</title>
+
+    ../style.css
+</head>
+
+<body>
+
+<header>
+    <h1>Mes ouvrages</h1>
+</header>
+
+<main>
+
+    <p>
+        Cette page présente les ouvrages publiés par Chantal Bouchard
+        ainsi que les ressources complémentaires associées.
+    </p>
+
+    <hr>
+
+    <h2>Construire des indicateurs utiles</h2>
+
+    <p>
+        <em>Avant de calculer un indicateur, savoir quoi mesurer.</em>
+    </p>
+
+    <p>
+        Un guide pratique pour concevoir des indicateurs pertinents,
+        utiles à la décision et adaptés au contexte organisationnel.
+    </p>
+
+    <p>
+        Ressources complémentaires disponibles dans la section
+        Ressources.
+    </p>
+
+    <hr>
+
+    <h2>Les clients qui se taisent</h2>
+
+    <p>
+        <em>Comprendre les plaintes, les silences et les départs invisibles.</em>
+    </p>
+
+    <p>
+        Un ouvrage consacré à la compréhension du comportement des
+        clients insatisfaits et aux mécanismes d'amélioration des services.
+    </p>
+
+    <p>
+        Ressources complémentaires disponibles dans la section
+        Ressources.
+    </p>
+
+    <hr>
+
+    <h2>Amélioration continue des services</h2>
+
+    <p>
+        <em>Outils, méthodes et applications.</em>
+    </p>
+
+    <p>
+        Une présentation des principaux outils et méthodes d'amélioration
+        continue appliqués aux organisations de services.
+    </p>
+
+    <p>
+        Ressources complémentaires disponibles dans la section
+        Ressources.
+    </p>
+
+</main>
+
+<footer>
+    <p>© Chantal Bouchard</p>
+</footer>
+
+</body>
+
+</html>
