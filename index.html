@@ -5,39 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil | ProfChantal.ca</title>
+    <!-- Typographie moderne: Playfair Display (titres) + Inter (texte) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Professeure Chantal Bouchard</h1>
-        <nav>
-            <a href="index.html" class="active">Accueil</a>
-            <a href="pages/apropos.html">À propos</a>
-            <a href="pages/livres.html">Livres</a>
-            <a href="pages/ressources.html">Ressources</a>
-            <a href="pages/publications.html">Publications</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <img src="/assets/images/logo.png" alt="Logo Prof Chantal" class="site-logo">
+            </a>
+            <nav class="main-nav" aria-label="Navigation principale">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="pages/apropos.html" class="nav-link">À propos</a>
+                <a href="pages/livres.html" class="nav-link">Livres</a>
+                <a href="pages/ressources.html" class="nav-link">Ressources</a>
+                <a href="pages/publications.html" class="nav-link">Publications</a>
+                <a href="pages/contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
 
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Bienvenue sur mon site professionnel</h2>
-                <p>
-                    Professeure agrégée à l'Université Laval, je me spécialise dans les sciences de la consommation,
-                    l'amélioration continue des services et la mesure de la performance.
-                </p>
-                <p>
-                    Découvrez mes ouvrages, publications, ressources pédagogiques et outils pratiques téléchargeables.
-                </p>
+        <section class="hero banner-hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Chantal Bouchard</h1>
+                    <h2>Professeure agrégée • Auteure • Chercheure</h2>
+                    <p>
+                        Spécialisée en qualité, évaluation et amélioration des services. Découvrez mes ouvrages, publications et ressources téléchargeables pour professionnels et étudiants.
+                    </p>
+                    <p class="hero-cta">
+                        <a href="pages/livres.html" class="btn btn-primary">Mes ouvrages</a>
+                        <a href="pages/ressources.html" class="btn btn-secondary">Ressources</a>
+                    </p>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <img src="assets/images/livre-1.jpg" alt="Couverture du livre principal">
+                </div>
             </div>
         </section>
 
-        <section class="featured-books">
+        <section class="featured-books container">
             <h2>Mes ouvrages principaux</h2>
             <div class="books-preview">
                 <article class="book-preview">
@@ -69,13 +81,11 @@
             </div>
         </section>
 
-        <section class="cta-section">
+        <section class="cta-section container">
             <div class="cta-content">
                 <h2>Ressources complémentaires</h2>
                 <p>
-                    Les lecteurs de mes ouvrages peuvent télécharger des
-                    annexes, modèles, outils pratiques et documents
-                    complémentaires dans la section Ressources.
+                    Les lecteurs de mes ouvrages peuvent télécharger des annexes, modèles et outils pratiques dans la section Ressources.
                 </p>
                 <a href="pages/ressources.html" class="btn btn-primary">Découvrir les ressources</a>
             </div>
@@ -84,7 +94,9 @@
     </main>
 
     <footer>
-        <p>© Chantal Bouchard</p>
+        <div class="container">
+            <p>© Chantal Bouchard</p>
+        </div>
     </footer>
 
 </body>
