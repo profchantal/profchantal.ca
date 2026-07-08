@@ -1,97 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livres | ProfChantal.ca</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-
-
-<nav>
-    <a href="index.html"</a>
-    <a href="apropos.html">À propos</a>
-    <a href="livres.html">Livres</a>
-    <a href="ressources.html">Ressources</a>
-    <a href="publications.html">Publications</a>
-    <a href="contact.html">Contact</a>
-</nav>
 
 <body>
 
-<header>
-    <h1>Mes ouvrages</h1>
-</header>
+    <header>
+        <h1>Professeure Chantal Bouchard</h1>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="livres.html" class="active">Livres</a>
+            <a href="ressources.html">Ressources</a>
+            <a href="publications.html">Publications</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
-    <p>
-        Cette page présente les ouvrages publiés par Chantal Bouchard
-        ainsi que les ressources complémentaires associées.
-    </p>
+        <section class="page-intro">
+            <h2>Mes ouvrages</h2>
+            <p>
+                Cette page présente les ouvrages publiés par Chantal Bouchard
+                ainsi que les ressources complémentaires associées.
+            </p>
+        </section>
 
-    <hr>
+        <section class="books-grid">
 
-    <h2>Construire des indicateurs utiles</h2>
+            <article class="book-card">
+                <div class="book-cover-placeholder">
+                    <img src="../assets/images/livre-1.jpg" alt="Couverture : Construire des indicateurs utiles" loading="lazy">
+                </div>
+                <div class="book-content">
+                    <h3>Construire des indicateurs utiles</h3>
+                    <p class="book-tagline">Avant de calculer un indicateur, savoir quoi mesurer.</p>
+                    <p class="book-description">
+                        Un guide pratique pour concevoir des indicateurs pertinents,
+                        utiles à la décision et adaptés au contexte organisationnel.
+                    </p>
+                    <a href="ressources.html#indicateurs" class="btn btn-primary">Voir les ressources</a>
+                </div>
+            </article>
 
-    <p>
-        <em>Avant de calculer un indicateur, savoir quoi mesurer.</em>
-    </p>
+            <article class="book-card">
+                <div class="book-cover-placeholder">
+                    <img src="../assets/images/livre-2.jpg" alt="Couverture : Les clients qui se taisent" loading="lazy">
+                </div>
+                <div class="book-content">
+                    <h3>Les clients qui se taisent</h3>
+                    <p class="book-tagline">Comprendre les plaintes, les silences et les départs invisibles.</p>
+                    <p class="book-description">
+                        Un ouvrage consacré à la compréhension du comportement des
+                        clients insatisfaits et aux mécanismes d'amélioration des services.
+                    </p>
+                    <a href="ressources.html#clients" class="btn btn-primary">Voir les ressources</a>
+                </div>
+            </article>
 
-    <p>
-        Un guide pratique pour concevoir des indicateurs pertinents,
-        utiles à la décision et adaptés au contexte organisationnel.
-    </p>
+            <article class="book-card">
+                <div class="book-cover-placeholder">
+                    <img src="../assets/images/livre-3.jpg" alt="Couverture : Amélioration continue des services" loading="lazy">
+                </div>
+                <div class="book-content">
+                    <h3>Amélioration continue des services</h3>
+                    <p class="book-tagline">Outils, méthodes et applications.</p>
+                    <p class="book-description">
+                        Une présentation des principaux outils et méthodes d'amélioration
+                        continue appliqués aux organisations de services.
+                    </p>
+                    <a href="ressources.html#amelioration" class="btn btn-primary">Voir les ressources</a>
+                </div>
+            </article>
 
-    <p>
-        Ressources complémentaires disponibles dans la section
-        Ressources.
-    </p>
+        </section>
 
-    <hr>
+    </main>
 
-    <h2>Les clients qui se taisent</h2>
-
-    <p>
-        <em>Comprendre les plaintes, les silences et les départs invisibles.</em>
-    </p>
-
-    <p>
-        Un ouvrage consacré à la compréhension du comportement des
-        clients insatisfaits et aux mécanismes d'amélioration des services.
-    </p>
-
-    <p>
-        Ressources complémentaires disponibles dans la section
-        Ressources.
-    </p>
-
-    <hr>
-
-    <h2>Amélioration continue des services</h2>
-
-    <p>
-        <em>Outils, méthodes et applications.</em>
-    </p>
-
-    <p>
-        Une présentation des principaux outils et méthodes d'amélioration
-        continue appliqués aux organisations de services.
-    </p>
-
-    <p>
-        Ressources complémentaires disponibles dans la section
-        Ressources.
-    </p>
-
-</main>
-
-<footer>
-    <p>© Chantal Bouchard</p>
-</footer>
+    <footer>
+        <p>© Chantal Bouchard</p>
+    </footer>
 
 </body>
 
