@@ -182,6 +182,14 @@ h3{font-size:1.2rem;color:var(--color-primary)}
     --color-text-light:#9aa7b1;
     --color-border:#1f2937;
     --color-primary:#5a9fd4;
+    --color-primary-light:#7bb3e0;
+    --color-primary-dark:#3d6fa8;
+    --color-accent: #d4af37;
+    --color-accent-dark: #a8892e;
+    --color-shadow: rgba(0,0,0,0.3);
+  }
+  body {
+    background-color: var(--color-bg);
   }
   .book-card{background:#0b1220}
   h1, h2, h3, h4, h5, h6 {
