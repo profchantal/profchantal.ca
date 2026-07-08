@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProfChantal.ca</title>
+    <title>Accueil | ProfChantal.ca</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,9 +12,8 @@
 
     <header>
         <h1>Professeure Chantal Bouchard</h1>
-
         <nav>
-            <a href="index.html">Accueil</a>
+            <a href="index.html" class="active">Accueil</a>
             <a href="pages/apropos.html">À propos</a>
             <a href="pages/livres.html">Livres</a>
             <a href="pages/ressources.html">Ressources</a>
@@ -24,26 +23,64 @@
     </header>
 
     <main>
-        <section>
-            <h2>Bienvenue</h2>
-            <p>
-                Bienvenue sur mon site professionnel.
-            </p>
-            <p>
-                Vous trouverez ici mes ouvrages, publications,
-                ressources pédagogiques, annexes et gabarits
-                téléchargeables.
-            </p>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bienvenue sur mon site professionnel</h2>
+                <p>
+                    Professeure agrégée à l'Université Laval, je me spécialise dans les sciences de la consommation,
+                    l'amélioration continue des services et la mesure de la performance.
+                </p>
+                <p>
+                    Découvrez mes ouvrages, publications, ressources pédagogiques et outils pratiques téléchargeables.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h2>Ressources complémentaires</h2>
-            <p>
-                Les lecteurs de mes ouvrages peuvent télécharger des
-                annexes, modèles, outils pratiques et documents
-                complémentaires dans la section Ressources.
-            </p>
+        <section class="featured-books">
+            <h2>Mes ouvrages principaux</h2>
+            <div class="books-preview">
+                <article class="book-preview">
+                    <div class="book-preview-cover">
+                        <img src="assets/images/livre-1.jpg" alt="Construire des indicateurs utiles" loading="lazy">
+                    </div>
+                    <h3>Construire des indicateurs utiles</h3>
+                    <p class="book-preview-tagline">Avant de calculer un indicateur, savoir quoi mesurer.</p>
+                    <a href="pages/livres.html" class="btn btn-secondary">Lire plus</a>
+                </article>
+
+                <article class="book-preview">
+                    <div class="book-preview-cover">
+                        <img src="assets/images/livre-2.jpg" alt="Les clients qui se taisent" loading="lazy">
+                    </div>
+                    <h3>Les clients qui se taisent</h3>
+                    <p class="book-preview-tagline">Comprendre les plaintes, les silences et les départs invisibles.</p>
+                    <a href="pages/livres.html" class="btn btn-secondary">Lire plus</a>
+                </article>
+
+                <article class="book-preview">
+                    <div class="book-preview-cover">
+                        <img src="assets/images/livre-3.jpg" alt="Amélioration continue des services" loading="lazy">
+                    </div>
+                    <h3>Amélioration continue des services</h3>
+                    <p class="book-preview-tagline">Outils, méthodes et applications.</p>
+                    <a href="pages/livres.html" class="btn btn-secondary">Lire plus</a>
+                </article>
+            </div>
         </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ressources complémentaires</h2>
+                <p>
+                    Les lecteurs de mes ouvrages peuvent télécharger des
+                    annexes, modèles, outils pratiques et documents
+                    complémentaires dans la section Ressources.
+                </p>
+                <a href="pages/ressources.html" class="btn btn-primary">Découvrir les ressources</a>
+            </div>
+        </section>
+
     </main>
 
     <footer>
