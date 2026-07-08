@@ -126,7 +126,136 @@ main {
 }
 
 /* ==========================================
-   Grille de Livres
+   Hero Section (Accueil)
+   ========================================== */
+
+.hero {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+    color: white;
+    padding: calc(var(--spacing-unit) * 6);
+    border-radius: var(--radius-lg);
+    margin-bottom: calc(var(--spacing-unit) * 6);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+.hero-content h2 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.hero-content p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto calc(var(--spacing-unit) * 2);
+}
+
+/* ==========================================
+   Section Livres en vedette (Accueil)
+   ========================================== */
+
+.featured-books {
+    margin-bottom: calc(var(--spacing-unit) * 6);
+}
+
+.featured-books h2 {
+    text-align: center;
+    margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.books-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: calc(var(--spacing-unit) * 3);
+}
+
+.book-preview {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.book-preview:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
+}
+
+.book-preview-cover {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    background: linear-gradient(135deg, var(--color-bg-light), #e8eef5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.book-preview-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.book-preview:hover .book-preview-cover img {
+    transform: scale(1.05);
+}
+
+.book-preview h3 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin: 0 calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 1.5);
+    line-height: 1.3;
+}
+
+.book-preview-tagline {
+    font-style: italic;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin: 0 calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 2);
+    font-weight: 500;
+}
+
+.book-preview .btn {
+    align-self: center;
+}
+
+/* ==========================================
+   CTA Section (Accueil)
+   ========================================== */
+
+.cta-section {
+    background-color: var(--color-bg-light);
+    padding: calc(var(--spacing-unit) * 5);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border: 2px solid var(--color-border);
+}
+
+.cta-content h2 {
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.cta-content p {
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto calc(var(--spacing-unit) * 3);
+    font-size: 1.05rem;
+}
+
+/* ==========================================
+   Grille de Livres (Page Livres)
    ========================================== */
 
 .books-grid {
@@ -214,6 +343,55 @@ main {
 }
 
 /* ==========================================
+   Sections de contenu
+   ========================================== */
+
+.content-section {
+    max-width: 900px;
+    margin: 0 auto calc(var(--spacing-unit) * 4);
+}
+
+.resource-block {
+    margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.resource-block h3 {
+    margin-top: calc(var(--spacing-unit) * 2);
+}
+
+/* ==========================================
+   Cartes de Contact
+   ========================================== */
+
+.contact-info {
+    max-width: 700px;
+}
+
+.contact-card {
+    background: var(--color-bg-light);
+    padding: calc(var(--spacing-unit) * 3);
+    border-radius: var(--radius);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    border-left: 4px solid var(--color-primary);
+}
+
+.contact-card h4 {
+    color: var(--color-primary);
+    margin-bottom: calc(var(--spacing-unit) * 1);
+    font-size: 1.1rem;
+}
+
+.contact-card p {
+    margin: 0;
+    color: var(--color-text-light);
+}
+
+.contact-card a {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+/* ==========================================
    Boutons
    ========================================== */
 
@@ -246,6 +424,23 @@ main {
 .btn-primary:active {
     transform: translateX(0);
     opacity: 0.9;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateX(2px);
+}
+
+.btn-secondary:active {
+    transform: translateX(0);
+    opacity: 0.8;
 }
 
 /* ==========================================
@@ -282,6 +477,11 @@ h2 {
 
 h3 {
     font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+h4 {
+    font-size: 1.1rem;
     color: var(--color-primary);
 }
 
@@ -355,17 +555,31 @@ li {
         font-size: 1.6rem;
     }
 
-    .books-grid {
+    .books-grid,
+    .books-preview {
         grid-template-columns: 1fr;
         gap: calc(var(--spacing-unit) * 3);
     }
 
-    .book-card h3 {
+    .book-card h3,
+    .book-preview h3 {
         font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: calc(var(--spacing-unit) * 4);
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
     }
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    .cta-section {
+        padding: calc(var(--spacing-unit) * 3);
     }
 }
 
@@ -400,13 +614,30 @@ li {
         padding: calc(var(--spacing-unit) * 2);
     }
 
-    .book-card h3 {
+    .book-card h3,
+    .book-preview h3 {
         font-size: 1.1rem;
     }
 
     .btn {
         padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2.5);
         font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: calc(var(--spacing-unit) * 2.5);
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-section {
+        padding: calc(var(--spacing-unit) * 2);
+    }
+
+    .contact-card {
+        padding: calc(var(--spacing-unit) * 2);
     }
 }
 
@@ -431,12 +662,22 @@ li {
         --color-border: #404040;
     }
 
-    .book-card {
+    .book-card,
+    .book-preview {
         background-color: #242424;
     }
 
     .book-cover-placeholder {
         background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+    }
+
+    .cta-section {
+        background-color: #2d2d2d;
+    }
+
+    .contact-card {
+        background-color: #2d2d2d;
+        border-left-color: var(--color-accent);
     }
 
     footer {
