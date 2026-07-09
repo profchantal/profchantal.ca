@@ -412,6 +412,7 @@ hr {
 }
 
 @media (max-width: 560px) {
+    .download-highlight { align-items: stretch; flex-direction: column; }
     .brand-text { display: none; }
 
     .hero-cta,
@@ -427,4 +428,55 @@ hr {
     .contact-card,
     .resource-block,
     .cta-content { padding: 1.2rem; }
+}
+
+
+/* Ressources téléchargeables */
+.download-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.2rem;
+    margin: 1.3rem 0 1.6rem;
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: calc(var(--radius) - 8px);
+}
+
+.download-highlight h4,
+.resource-block h4 {
+    margin-bottom: 0.45rem;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1rem;
+    color: var(--accent-dark);
+}
+
+.download-highlight p { margin-bottom: 0; }
+
+.download-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 0.65rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.download-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.85rem 1rem;
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.download-list li + li { margin-top: 0; }
+
+.download-list a { font-weight: 700; }
+
+.file-meta {
+    color: var(--muted);
+    font-size: 0.88rem;
 }
