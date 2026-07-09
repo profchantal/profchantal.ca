@@ -21,6 +21,6 @@ Les pages sont harmonisées :
 - seulement deux livres affichés;
 - aucun troisième livre sans couverture;
 - ressources alignées avec les deux livres actuels;
-- cache forcé avec ?v=4.
+- cache forcé avec ?v=10.
 
 Après téléversement, vider le cache du navigateur ou faire Ctrl + F5.

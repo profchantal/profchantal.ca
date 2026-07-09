@@ -4,7 +4,7 @@ Mise à jour effectuée :
 - ajout des annexes A à L du livre Construire des indicateurs utiles;
 - ajout du ZIP complet des annexes;
 - ajout de liens individuels vers chaque annexe Word dans pages/ressources.html;
-- cache CSS/JS mis à jour en ?v=5.
+- cache CSS/JS mis à jour en ?v=10.
 
 Dossier à conserver sur le serveur :
 /downloads/indicateurs/

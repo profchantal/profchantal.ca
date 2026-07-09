@@ -6,7 +6,7 @@ Cette version corrige la cohérence des pages :
 - les menus sont harmonisés sur toutes les pages;
 - les chemins CSS et JavaScript sont cohérents;
 - les noms d'images sont descriptifs et stables;
-- le cache est forcé avec ?v=3.
+- le cache est forcé avec ?v=10.
 
 À téléverser à la racine du site :
 - index.html

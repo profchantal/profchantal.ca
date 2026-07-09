@@ -8,7 +8,7 @@ Corrections appliquées :
 - À propos : ajout de la qualité des services, des programmes et des processus.
 - À propos : ajout de l'optimisation des processus.
 - Contact : retrait de « agrégée » pour garder la cohérence du site.
-- Cache CSS/JS mis à jour en ?v=8.
+- Cache CSS/JS mis à jour en ?v=10.
 
 Structure à téléverser à la racine :
 /index.html
