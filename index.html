@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil | ProfChantal.ca</title>
-    <!-- Typographie moderne: Playfair Display (titres) + Inter (texte) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 
 <body>
 
     <header class="site-header">
         <div class="container header-inner">
-            <a href="index.html" class="brand">
+            <a href="index.html" class="brand" aria-label="Accueil ProfChantal.ca">
                 <img src="assets/images/logo.png" alt="Logo Prof Chantal" class="site-logo">
+                <span class="brand-text">ProfChantal.ca</span>
             </a>
-            <button class="nav-toggle" aria-expanded="false" aria-label="Basculer le menu">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu">
                 <span class="hamburger"></span>
             </button>
             <nav class="main-nav" aria-label="Navigation principale">
@@ -31,78 +33,72 @@
         </div>
     </header>
 
-    <main>
-
-        <section class="hero banner-hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Chantal Bouchard</h1>
-                    <h2>Professeure agrégée • Auteure • Chercheure</h2>
-                    <p>
+<main>
+<section class="hero banner-hero">
+<div class="container hero-content">
+<div class="hero-text">
+<h1>Chantal Bouchard</h1>
+<h2>Professeure agrégée • Auteure • Chercheure</h2>
+<p>
                         Spécialisée en qualité, évaluation et amélioration des services. Découvrez mes ouvrages, publications et ressources téléchargeables pour professionnels et étudiant[...]
                     </p>
-                    <p class="hero-cta">
-                        <a href="pages/livres.html" class="btn btn-primary">Mes ouvrages</a>
-                        <a href="pages/ressources.html" class="btn btn-secondary">Ressources</a>
-                    </p>
-                </div>
-                <div class="hero-visual" aria-hidden="true">
-                    <img src="assets/images/livre-1.png" alt="Couverture du livre principal">
-                </div>
-            </div>
-        </section>
-
-        <section class="featured-books container">
-            <h2>Mes ouvrages principaux</h2>
-            <div class="books-preview">
-                <article class="book-preview">
-                    <div class="book-preview-cover">
-                        <img src="assets/images/livre-1.png" alt="Construire des indicateurs utiles" loading="lazy">
-                    </div>
-                    <h3>Construire des indicateurs utiles</h3>
-                    <p class="book-preview-tagline">Avant de calculer un indicateur, savoir quoi mesurer.</p>
-                    <a href="pages/livres.html" class="btn btn-secondary">Lire plus</a>
-                </article>
-
-                <article class="book-preview">
-                    <div class="book-preview-cover">
-                        <img src="assets/images/livre-2.jpg" alt="Les clients qui se taisent" loading="lazy">
-                    </div>
-                    <h3>Les clients qui se taisent</h3>
-                    <p class="book-preview-tagline">Comprendre les plaintes, les silences et les départs invisibles.</p>
-                    <a href="pages/livres.html" class="btn btn-secondary">Lire plus</a>
-                </article>
-
-                <article class="book-preview">
-                    <div class="book-preview-cover">
-                        <img src="assets/images/livre-3.jpg" alt="Amélioration continue des services" loading="lazy">
-                    </div>
-                    <h3>Amélioration continue des services</h3>
-                    <p class="book-preview-tagline">Outils, méthodes et applications.</p>
-                    <a href="pages/livres.html" class="btn btn-secondary">Lire plus</a>
-                </article>
-            </div>
-        </section>
-
-        <section class="cta-section container">
-            <div class="cta-content">
-                <h2>Ressources complémentaires</h2>
-                <p>
+<p class="hero-cta">
+<a class="btn btn-primary" href="pages/livres.html">Mes ouvrages</a>
+<a class="btn btn-secondary" href="pages/ressources.html">Ressources</a>
+</p>
+</div>
+<div aria-hidden="true" class="hero-visual">
+<img alt="Couverture du livre principal" src="assets/images/livre-1.png"/>
+</div>
+</div>
+</section>
+<section class="featured-books container">
+<h2>Mes ouvrages principaux</h2>
+<div class="books-preview">
+<article class="book-preview">
+<div class="book-preview-cover">
+<img alt="Construire des indicateurs utiles" loading="lazy" src="assets/images/livre-1.png"/>
+</div>
+<h3>Construire des indicateurs utiles</h3>
+<p class="book-preview-tagline">Avant de calculer un indicateur, savoir quoi mesurer.</p>
+<a class="btn btn-secondary" href="pages/livres.html">Lire plus</a>
+</article>
+<article class="book-preview">
+<div class="book-preview-cover">
+<img alt="Les clients qui se taisent" loading="lazy" src="assets/images/livre-2.jpg"/>
+</div>
+<h3>Les clients qui se taisent</h3>
+<p class="book-preview-tagline">Comprendre les plaintes, les silences et les départs invisibles.</p>
+<a class="btn btn-secondary" href="pages/livres.html">Lire plus</a>
+</article>
+<article class="book-preview">
+<div class="book-preview-cover">
+<img alt="Amélioration continue des services" loading="lazy" src="assets/images/livre-3.jpg"/>
+</div>
+<h3>Amélioration continue des services</h3>
+<p class="book-preview-tagline">Outils, méthodes et applications.</p>
+<a class="btn btn-secondary" href="pages/livres.html">Lire plus</a>
+</article>
+</div>
+</section>
+<section class="cta-section container">
+<div class="cta-content">
+<h2>Ressources complémentaires</h2>
+<p>
                     Les lecteurs de mes ouvrages peuvent télécharger des annexes, modèles et outils pratiques dans la section Ressources.
                 </p>
-                <a href="pages/ressources.html" class="btn btn-primary">Découvrir les ressources</a>
-            </div>
-        </section>
+<a class="btn btn-primary" href="pages/ressources.html">Découvrir les ressources</a>
+</div>
+</section>
+</main>
 
-    </main>
-
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <p>© Chantal Bouchard</p>
         </div>
     </footer>
 
-    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/main.js?v=2" defer></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
