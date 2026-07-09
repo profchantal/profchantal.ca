@@ -5,65 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | ProfChantal.ca</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=2">
 </head>
 
 <body>
 
-    <header>
-        <h1>Professeure Chantal Bouchard</h1>
-        <nav>
-            <a href="../index.html">Accueil</a>
-            <a href="apropos.html">À propos</a>
-            <a href="livres.html">Livres</a>
-            <a href="ressources.html">Ressources</a>
-            <a href="publications.html">Publications</a>
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand" aria-label="Accueil ProfChantal.ca">
+                <img src="../assets/images/logo.png" alt="Logo Prof Chantal" class="site-logo">
+                <span class="brand-text">ProfChantal.ca</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="main-nav" aria-label="Navigation principale">
+                <a href="../index.html" class="nav-link">Accueil</a>
+                <a href="apropos.html" class="nav-link">À propos</a>
+                <a href="livres.html" class="nav-link">Livres</a>
+                <a href="ressources.html" class="nav-link">Ressources</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-
-        <section class="page-intro">
-            <h2>Contact</h2>
-            <p>
+<main>
+<section class="page-intro">
+<h2>Contact</h2>
+<p>
                 Pour toute question concernant mes ouvrages, publications ou
                 ressources pédagogiques, n'hésitez pas à me contacter.
             </p>
-        </section>
-
-        <section class="content-section contact-info">
-            <h3>Coordonnées</h3>
-
-            <div class="contact-card">
-                <h4>Informations personnelles</h4>
-                <p>
-                    <strong>Chantal Bouchard</strong><br>
-                    Professeure agrégée<br>
+</section>
+<section class="content-section contact-info">
+<h3>Coordonnées</h3>
+<div class="contact-card">
+<h4>Informations personnelles</h4>
+<p>
+<strong>Chantal Bouchard</strong><br/>
+                    Professeure agrégée<br/>
                     Université Laval
                 </p>
-            </div>
+</div>
+<div class="contact-card">
+<h4>Courriel</h4>
+<p>
+<a href="mailto:chbou107@ulaval.ca">chbou107@ulaval.ca</a>
+</p>
+</div>
+<div class="contact-card">
+<h4>Réseau professionnel</h4>
+<p>
+<a href="https://www.linkedin.com/in/chantal-bouchard-qualite/" rel="noopener noreferrer" target="_blank">LinkedIn : Chantal Bouchard</a>
+</p>
+</div>
+</section>
+</main>
 
-            <div class="contact-card">
-                <h4>Courriel</h4>
-                <p>
-                    <a href="mailto:chbou107@ulaval.ca">chbou107@ulaval.ca</a>
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <h4>Réseau professionnel</h4>
-                <p>
-                    <a href="https://www.linkedin.com/in/chantal-bouchard-qualite/" target="_blank" rel="noopener noreferrer">LinkedIn : Chantal Bouchard</a>
-                </p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© Chantal Bouchard</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© Chantal Bouchard</p>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js?v=2" defer></script>
+    
 
 </body>
 
