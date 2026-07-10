@@ -1,21 +1,15 @@
-NOMS DES FICHIERS D'IMAGES POUR PROFCHANTAL.CA
+NOMS DES FICHIERS D’IMAGES POUR PROFCHANTAL.CA
 
-Ces deux images sont incluses dans ce ZIP à deux endroits :
+Images utilisées par le site :
 
-1) À leur emplacement final exact :
-   /assets/images/construire-des-indicateurs-utiles.jpg
-   /assets/images/les-clients-qui-se-taisent.jpg
+/assets/images/construire-des-indicateurs-utiles.jpg
+/assets/images/les-clients-qui-se-taisent.jpg
 
-2) En copie facile à repérer :
-   /IMAGES_A_METTRE_DANS_ASSETS_IMAGES/construire-des-indicateurs-utiles.jpg
-   /IMAGES_A_METTRE_DANS_ASSETS_IMAGES/les-clients-qui-se-taisent.jpg
+Une copie de ces images se trouve aussi dans :
 
-Le site utilise actuellement seulement deux livres publiés.
-Le troisième livre n'est pas affiché, car sa couverture n'est pas encore prête et il n'est pas encore publié.
+/IMAGES_A_METTRE_DANS_ASSETS_IMAGES/
 
-Noms utilisés dans le code HTML :
-- construire-des-indicateurs-utiles.jpg
-- les-clients-qui-se-taisent.jpg
+Le site affiche actuellement seulement deux livres publiés. Le troisième livre n’est pas affiché, car sa couverture n’est pas encore prête et il n’est pas encore publié.
 
 Anciennes images à ne plus utiliser pour cette version :
 - livre-1.png
@@ -24,6 +18,6 @@ Anciennes images à ne plus utiliser pour cette version :
 - livre-3.jpg
 
 Format des images incluses :
-- 900 x 1350 px
 - JPG
 - ratio 2:3
+- couverture « Construire des indicateurs utiles » mise à jour à partir de la nouvelle couverture complète fournie.
