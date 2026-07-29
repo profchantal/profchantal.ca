@@ -1,3 +1,4 @@
+/* Version 15 - Accueil avec les deux livres Lean Six Sigma visibles */
 /* ProfChantal.ca - feuille de style principale
    Version 12 : ajout du livre Amélioration continue des services */
 :root {
@@ -281,6 +282,42 @@ li + li { margin-top: 0.45rem; }
 .btn-outline:focus {
     background: var(--surface-soft);
     border-color: var(--gold-dark);
+}
+
+.section-intro {
+    max-width: 760px;
+    margin: 0.8rem 0 1.8rem;
+    color: var(--muted);
+    font-size: 1.02rem;
+}
+
+.hero-books-stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-books-stack img {
+    max-height: 340px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.hero-books-stack img:nth-child(2) {
+    transform: translateY(1.2rem);
+}
+
+@media (max-width: 760px) {
+    .hero-books-stack {
+        gap: 0.7rem;
+    }
+    .hero-books-stack img {
+        max-height: 250px;
+    }
+    .hero-books-stack img:nth-child(2) {
+        transform: translateY(0.8rem);
+    }
 }
 
 .featured-books,
