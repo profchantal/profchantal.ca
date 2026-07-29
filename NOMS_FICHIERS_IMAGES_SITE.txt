@@ -1,0 +1,8 @@
+Images utilisées dans /assets/images/
+
+- amelioration-continue-des-services.jpg
+- livre-compagnon-boite-outils-lean-six-sigma.jpg
+- construire-des-indicateurs-utiles.jpg
+- les-clients-qui-se-taisent.jpg
+
+Remplacer une image sur le site : conserver exactement le même nom de fichier et téléverser dans /assets/images/.
